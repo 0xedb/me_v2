@@ -1,15 +1,10 @@
-import { page } from './page.scss';
-import NavBar from '../nav/NavBar';
+import { page } from './page.scss'; 
 import '@atlaskit/css-reset'
 
-function Page({ children, withNav }: PageProps) {
+function Page({ children }: Props) {
     return (
         <div id={page}>
-            {withNav ? <NavBar /> : null}
-            <div>
-                <span>adsf</span>
-                {children}
-            </div>
+            {children}
         </div>
     );
 }

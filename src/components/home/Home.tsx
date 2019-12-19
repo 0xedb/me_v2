@@ -1,5 +1,6 @@
 import Page from '../page/Page'
 import HeadMeta from '../meta/HeadMeta'
+import NavBar from '../nav/NavBar'
 
 function Home() {
     return (
@@ -7,7 +8,9 @@ function Home() {
             <HeadMeta>
                 <title>theBashShell::Bruno Edoh</title>
             </HeadMeta>
-            <Page withNav>helloI</Page>
+            <Page >
+                <NavBar />
+            </Page>
         </>
     );
 }

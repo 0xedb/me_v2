@@ -1,11 +1,12 @@
 declare module '*.scss';
 
 interface Props {
-    children?: ReactElement
+    children?: ReactElement;
 }
+ 
 
-interface PageProps extends Props {
-    withNav?: boolean
+interface MenuProps {
+    show?: boolean;
 }
 
  

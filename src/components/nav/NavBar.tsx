@@ -1,16 +1,23 @@
-import { nav, nav_content, left, right } from './navbar.scss';
-
+import { nav, content, left, right, a } from './navbar.scss';
+import Link from 'next/link';
+import Menu from '../menu/Menu';
+ 
 function NavBar() {
-    return (
-        <nav className={nav}>
-            <div className={nav_content}>
-                <div className={left}>one</div>
-                <div className={right}>
-                    hey
+	
+	return (
+		<nav className={nav}>
+			<div className={content}>
+				<div className={left}>
+					<Link href="/">
+						<a className={a}>{`<bruno />`}</a>
+					</Link>
 				</div>
-            </div>
-        </nav>
-    );
+				<div className={right}> 
+					<Menu />
+				</div>
+			</div>
+		</nav>
+	);
 }
 
 export default NavBar;

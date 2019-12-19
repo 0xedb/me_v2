@@ -1,16 +1,23 @@
 @import '../../../public/styles/app.scss';
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 
-$pad: 60px;
+
+$pad: 30px;
+$pad_desk: $pad + 30px;
+$nav_color: rgb(134, 134, 134);
 
 nav {
     height: 120px;
+    padding: $pad - 10px;
     @extend .min_width;
 }
 
-.nav_content {
+.content {
     @extend .full_dim;
     @extend .flex_row;
-    background: black;
+    color: $nav_color;
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
 }
 
 .left {
@@ -23,8 +30,12 @@ nav {
 }
 
 
-.nav_content>* {
-    @extend .nav_content;
+.content>* {
+    @extend .content;
+}
+
+.a {
+    @extend .link;
 }
 
 
@@ -32,4 +43,18 @@ nav {
     background: none;
     border: none;
     outline: none;
+}
+
+@media(min-width: $desktop) {
+    .content {
+        font-size: 40px;
+    }
+
+    .left {
+        padding-left: $pad_desk;
+    }
+
+    .right {
+        padding-right: $pad_desk;
+    }
 }

@@ -1,3 +1,4 @@
+$desktop: 750px;
 
 .full_dim {
     height: 100%;
@@ -12,7 +13,7 @@
     display: flex;
 }
 
-%flex_center { 
+%flex_center {
     align-items: center;
 }
 
@@ -30,3 +31,11 @@
     opacity: 0;
 }
 
+.link,
+.link:focus,
+.link:active,
+.link:hover {
+    outline: none;
+    color: unset;
+    text-decoration: none;
+}
