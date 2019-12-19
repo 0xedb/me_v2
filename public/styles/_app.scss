@@ -1,0 +1,32 @@
+
+.full_dim {
+    height: 100%;
+    width: 100%;
+}
+
+.min_width {
+    min-width: 300px;
+}
+
+%flex {
+    display: flex;
+}
+
+%flex_center { 
+    align-items: center;
+}
+
+.flex_row {
+    @extend %flex;
+    @extend %flex_center;
+    flex-flow: row nowrap;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+

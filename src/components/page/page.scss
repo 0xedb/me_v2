@@ -1,0 +1,7 @@
+@import '../../../public/styles//app';
+ 
+#page {
+    @extend .min_width;
+    @extend .full_dim;
+    position: absolute; 
+}

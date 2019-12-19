@@ -1,0 +1,35 @@
+@import '../../../public/styles/app.scss';
+
+$pad: 60px;
+
+nav {
+    height: 120px;
+    @extend .min_width;
+}
+
+.nav_content {
+    @extend .full_dim;
+    @extend .flex_row;
+    background: black;
+}
+
+.left {
+    padding-left: $pad;
+}
+
+.right {
+    padding-right: $pad;
+    justify-content: flex-end;
+}
+
+
+.nav_content>* {
+    @extend .nav_content;
+}
+
+
+.nav_menu {
+    background: none;
+    border: none;
+    outline: none;
+}
